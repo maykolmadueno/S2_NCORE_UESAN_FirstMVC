@@ -18,7 +18,7 @@ namespace S2_NCORE_UESAN_FirstMVC.Web.Areas.Marketing.Controllers
             var products= GetProductsJsonLocal();
             return View(products);
         }
-<<<<<<< HEAD
+
         public IActionResult ProductsViewData()
         {
             var products = GetProductsJsonLocal();
@@ -31,8 +31,7 @@ namespace S2_NCORE_UESAN_FirstMVC.Web.Areas.Marketing.Controllers
             ViewBag.ProductList = products;
             return View();
         }
-=======
->>>>>>> 21b77c6d342d235ea1555093fee9e5264bc81ba8
+
 
         public IEnumerable<Product> GetProductsJsonLocal()
         {
