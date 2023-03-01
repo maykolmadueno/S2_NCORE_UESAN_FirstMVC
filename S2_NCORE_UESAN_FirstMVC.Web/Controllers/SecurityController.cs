@@ -8,5 +8,22 @@ namespace S2_NCORE_UESAN_FirstMVC.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(string email,string password)
+        {
+            if (email=="20100843@ue.edu.pe" && password=="123456")
+            {
+                //return View("Login");
+                return RedirectToAction("Index", "Home",new {area ="Marketing"});
+
+            }
+            return RedirectToAction("Login");
+        }
     }
 }
